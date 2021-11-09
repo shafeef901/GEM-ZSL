@@ -67,5 +67,6 @@ for s in new_des:
 all_w2v=np.concatenate(all_w2v,axis=0)
 pdb.set_trace()
 #%%
-with open('datasets/Attribute/w2v/CUB_attribute.pkl','wb') as f:
-    pickle.dump(all_w2v,f)
+pickle.dump(all_w2v,open('datasets/Attribute/w2v/CUB_attribute.pkl','wb'))
+#with open('datasets/Attribute/w2v/CUB_attribute.pkl','wb') as f:
+ #   pickle.dump(all_w2v,f)
